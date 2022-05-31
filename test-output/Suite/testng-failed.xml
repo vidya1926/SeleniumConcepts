@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="pwd" value="crmsfa"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/login"/>
+  <parameter name="username" value="demosalesManager"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="targetLocators.testcase.DeleteLead">
+        <methods>
+          <include name="deleteLead"/>
+          <include name="preConditions"/>
+          <include name="createLead"/>
+          <include name="tearDown"/>
+          <include name="callFile"/>
+        </methods>
+      </class> <!-- targetLocators.testcase.DeleteLead -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
